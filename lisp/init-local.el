@@ -11,9 +11,6 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
-;; For system paste
-(global-set-key (kbd "M-v") 'cua-paste)
-
 ;; for multi line edit
 (global-set-key (kbd "C-S-<mouse-1>") 'mc/add-cursor-on-click)
 
@@ -22,8 +19,13 @@
         ("https"    . "localhost:8118")))
 
 
-;; Alway use option as meta
-(setq mac-option-modifier 'meta)
+(when *is-a-mac*
+  ;; Alway use option as meta
+  (setq mac-option-modifier 'meta)
+  (setq mac-command-modifier 'super)
+
+  ;; For system paste
+  (global-set-key (kbd "s-v") 'cua-paste))
 
 (provide 'init-local)
 ;;; init-local.el ends here
