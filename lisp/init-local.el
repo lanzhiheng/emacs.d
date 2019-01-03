@@ -18,6 +18,8 @@
       '(("http"     . "localhost:8118")
         ("https"    . "localhost:8118")))
 
+(setq js2-strict-missing-semi-warning nil)
+(setq css-indent-offset 2)
 
 (when *is-a-mac*
   ;; Alway use option as meta
