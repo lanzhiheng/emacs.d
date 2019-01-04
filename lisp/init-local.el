@@ -21,6 +21,8 @@
 (setq js2-strict-missing-semi-warning nil)
 (setq css-indent-offset 2)
 
+(setq org-hide-leading-stars t)
+
 (when *is-a-mac*
   ;; Alway use option as meta
   (setq mac-option-modifier 'meta)
