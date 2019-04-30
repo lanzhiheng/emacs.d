@@ -33,6 +33,7 @@
   (global-set-key (kbd "s-v") 'cua-paste))
 
 (global-hl-line-mode)
+(setq-default dimmer-fraction 0.3)
 
 (provide 'init-local)
 ;;; init-local.el ends here
