@@ -15,13 +15,14 @@
 (global-set-key (kbd "C-S-<mouse-1>") 'mc/add-cursor-on-click)
 
 (setq url-proxy-services
-      '(("http"     . "localhost:8118")
-        ("https"    . "localhost:8118")))
+      '(("http"     . "localhost:9090")
+        ("https"    . "localhost:9090")))
 
 (setq js2-strict-missing-semi-warning nil)
 (setq css-indent-offset 2)
 
 (setq org-hide-leading-stars t)
+(setq org-startup-truncated t)
 
 (when *is-a-mac*
   ;; Alway use option as meta
@@ -30,6 +31,8 @@
 
   ;; For system paste
   (global-set-key (kbd "s-v") 'cua-paste))
+
+(global-hl-line-mode)
 
 (provide 'init-local)
 ;;; init-local.el ends here
