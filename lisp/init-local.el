@@ -35,5 +35,7 @@
 (global-hl-line-mode)
 (setq-default dimmer-fraction 0.3)
 
+(global-origami-mode)
+
 (provide 'init-local)
 ;;; init-local.el ends here
