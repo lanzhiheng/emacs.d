@@ -83,7 +83,6 @@
 (require 'init-github)
 
 (require 'init-projectile)
-
 (require 'init-compile)
 (require 'init-crontab)
 (require 'init-textile)
@@ -119,8 +118,6 @@
 (require 'init-clojure)
 (require 'init-clojure-cider)
 (require 'init-common-lisp)
-(require 'init-vue)
-
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
@@ -132,6 +129,10 @@
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
 (require 'init-ledger)
+
+(require 'init-web-mode)
+(require 'init-dumb-jump)
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
