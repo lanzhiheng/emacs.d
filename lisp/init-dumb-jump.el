@@ -1,7 +1,15 @@
 (require-package 'dumb-jump)
+(require-package 'use-package)
 
-(global-set-key (kbd "C-c g") 'dumb-jump-go)
-(global-set-key (kbd "C-c b") 'dumb-jump-back)
-(global-set-key (kbd "C-c q") 'dumb-jump-quick-look)
+(use-package dumb-jump
+  :bind (("M-g o" . dumb-jump-go-other-window)
+         ("M-g j" . dumb-jump-go)
+         ("M-g b" . dumb-jump-back)
+         ("M-g i" . dumb-jump-go-prompt)
+         ("M-g x" . dumb-jump-go-prefer-external)
+         ("M-g z" . dumb-jump-go-prefer-external-other-window))
+  :config (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)
+  :ensure)
+
 
 (provide 'init-dumb-jump)
