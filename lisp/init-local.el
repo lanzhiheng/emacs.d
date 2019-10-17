@@ -40,7 +40,6 @@
 (add-auto-mode 'html-mode "\\.\\(wxml\\)\\'")
 (add-to-list 'auto-mode-alist '("\\.\\(wxs\\)\\'" . js2-mode))
 
-
 ;; Track Emacs commands frequency
 (when (maybe-require-package 'keyfreq)
   (keyfreq-mode 1)
@@ -48,4 +47,7 @@
   )
 
 (provide 'init-local)
+
+
+(c-set-offset 'case-label '+)
 ;;; init-local.el ends here
