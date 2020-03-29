@@ -46,8 +46,10 @@
   (keyfreq-autosave-mode 1)
   )
 
+(c-set-offset 'case-label '+)
+
 (provide 'init-local)
 
 
-(c-set-offset 'case-label '+)
+
 ;;; init-local.el ends here
